@@ -60,6 +60,9 @@ Start with a header stating what was reviewed, then list issues ranked by severi
 
 Each issue has:
 - **[Tag]** from the relevant principle file's issue tags, followed by a short title summarizing the issue
+  - Prefer the predefined tags from principle files when the issue fits
+  - Use a descriptive custom tag (e.g., [Hardcoded Dependency], [Inconsistent Abstraction]) for issues that don't fit the standard categories
+  - Custom tags should follow the same format: bracketed, clear, and specific
 - **Location** as `file:path:SymbolOrLine`
 - **1-2 sentence description** of the problem and its impact on complexity
 - **Suggestion** that is specific to the project context, not a generic principle restatement
