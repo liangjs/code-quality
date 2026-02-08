@@ -1,12 +1,12 @@
-# Code Quality Review Skill
+# Code Quality Review Plugin
 
-Reviews code for long-term maintainability based on principles from _"A Philosophy of Software Design"_ by John Ousterhout.
+A Claude Code plugin that reviews code for long-term maintainability based on principles from _"A Philosophy of Software Design"_ by John Ousterhout.
 
 Focuses on structural and design quality — not bugs, correctness, or style.
 
 ## Overview
 
-This skill helps identify design issues that reduce long-term maintainability by detecting complexity patterns such as shallow modules, information leakage, and unclear abstractions. Use it during code reviews or before commits to catch structural problems early—issues that accumulate gradually and become expensive to fix later.
+This plugin provides the `/code-quality:review` skill that helps identify design issues reducing long-term maintainability by detecting complexity patterns such as shallow modules, information leakage, and unclear abstractions. Use it during code reviews or before commits to catch structural problems early—issues that accumulate gradually and become expensive to fix later.
 
 **When to use:**
 - Before committing significant changes to understand design impact
@@ -20,15 +20,29 @@ This skill helps identify design issues that reduce long-term maintainability by
 - Performance optimization suggestions
 - Security vulnerability detection
 
+## Installation
+
+### Local Development
+
+To test the plugin locally during development:
+
+```bash
+claude --plugin-dir /path/to/code-quality
+```
+
+### From Git Repository
+
+To install from a marketplace or git repository, use the Claude Code plugin system. (Instructions will be added once the plugin is published.)
+
 ## Usage
 
 ```
-/review-code-quality                  # Review current git changes
-/review-code-quality src/auth.py      # Review specific file
-/review-code-quality src/             # Review directory
-/review-code-quality abc123           # Review commit
-/review-code-quality main..feature    # Review branch diff
-/review-code-quality #123             # Review PR
+/code-quality:review                  # Review current git changes
+/code-quality:review src/auth.py      # Review specific file
+/code-quality:review src/             # Review directory
+/code-quality:review abc123           # Review commit
+/code-quality:review main..feature    # Review branch diff
+/code-quality:review #123             # Review PR
 ```
 
 ## Review Dimensions
@@ -44,7 +58,5 @@ This skill helps identify design issues that reduce long-term maintainability by
 
 ## Documentation
 
-- [`SKILL.md`](SKILL.md) — Skill specification and review workflow
-- [`DESIGN.md`](DESIGN.md) — Architecture and design decisions
-- [`principles/`](principles/) — Detailed criteria for each dimension
-- [`examples/output.md`](examples/output.md) — Sample outputs
+- [`DESIGN.md`](DESIGN.md) — Complete plugin design and architecture
+- [`skills/review/SKILL.md`](skills/review/SKILL.md) — Skill specification and review workflow

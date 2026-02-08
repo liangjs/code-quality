@@ -1,8 +1,8 @@
-# Skill Design: `/review-code-quality`
+# Plugin Design: `code-quality`
 
 ## Overview
 
-A Claude Code skill that reviews code for long-term maintainability concerns. It focuses on structural and design quality — not bugs, correctness, or style.
+A Claude Code plugin providing the `/code-quality:review` skill that reviews code for long-term maintainability concerns. It focuses on structural and design quality — not bugs, correctness, or style.
 
 ## Input Resolution
 
@@ -18,13 +18,17 @@ The skill auto-detects what to review based on the argument:
 
 Ranked issues ordered by severity, with positive feedback when nearly no issues found. Full format spec is in `SKILL.md`; examples are in `examples/output.md`.
 
-## File Structure
+## Plugin Structure
 
 ```
-.claude/skills/review-code-quality/
-├── SKILL.md                              # Complexity framing + review workflow + output format
-└── principles/
-    └─── *.md
+code-quality/
+├── .claude-plugin/
+│   └── plugin.json                       # Plugin manifest
+├── skills/review/
+│   ├── SKILL.md                          # Complexity framing + review workflow + output format
+│   ├── principles/*.md                   # review dimensions
+│   └── examples/output.md
+└── [README.md, DESIGN.md, CLAUDE.md]
 ```
 
 ### SKILL.md

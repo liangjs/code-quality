@@ -1,0 +1,20 @@
+{
+  "name": "code-quality",
+  "description": "Reviews code for long-term maintainability concerns, focusing on structural and design quality.",
+  "version": "1.0.0",
+  "keywords": [
+    "code-quality",
+    "code-review",
+    "maintainability",
+    "design",
+    "complexity",
+    "architecture",
+    "refactoring"
+  ],
+  "author": {
+    "name": "liangjs"
+  },
+  "homepage": "https://github.com/liangjs/code-quality",
+  "repository": "https://github.com/liangjs/code-quality",
+  "license": "MIT"
+}

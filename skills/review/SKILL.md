@@ -1,5 +1,5 @@
 ---
-name: review-code-quality
+name: review
 description: Review code for structural and design quality.
 argument-hint: "[file|dir|commit|main..branch|#pr]"
 allowed-tools:
