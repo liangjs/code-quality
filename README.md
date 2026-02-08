@@ -30,9 +30,14 @@ To test the plugin locally during development:
 claude --plugin-dir /path/to/code-quality
 ```
 
-### From Git Repository
+### From Marketplace
 
-To install from a marketplace or git repository, use the Claude Code plugin system. (Instructions will be added once the plugin is published.)
+To install the plugin from GitHub:
+
+```bash
+/plugin marketplace add https://github.com/liangjs/code-quality
+/plugin install code-quality
+```
 
 ## Usage
 

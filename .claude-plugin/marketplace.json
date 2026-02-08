@@ -1,0 +1,27 @@
+{
+  "name": "code-quality",
+  "owner": {
+    "name": "liangjs"
+  },
+  "metadata": {
+    "description": "A marketplace for code quality review tools focused on long-term maintainability"
+  },
+  "plugins": [
+    {
+      "name": "code-quality",
+      "source": "./",
+      "description": "Reviews code for long-term maintainability concerns, focusing on structural and design quality.",
+      "version": "1.0.0",
+      "keywords": [
+        "code-quality",
+        "code-review",
+        "maintainability",
+        "design",
+        "complexity",
+        "architecture",
+        "refactoring"
+      ],
+      "category": "productivity"
+    }
+  ]
+}
