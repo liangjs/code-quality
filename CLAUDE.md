@@ -15,3 +15,4 @@ See @DESIGN.md for the complete finalized design. The plugin structure follows C
 ## Implementation Notes
 
 - Read book chapters selectively as needed during implementation, do NOT read the full book upfront.
+- Bump the plugin version in `.claude-plugin/plugin.json` when making changes that affect users (skill behavior, output format, new features).
