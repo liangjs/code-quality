@@ -6,6 +6,7 @@ Reviewed: staged changes (3 files, +120/-45 lines)
    AuthHandler exposes 8 methods that mostly delegate to internal calls
    with minimal transformation. The interface is almost as complex as
    the implementation.
+
    **Suggestion:** This class handles both session validation and token refresh. Merging
    these into a single `authenticate()` that handles the full lifecycle
    internally would hide the multi-step process from callers.
@@ -13,6 +14,7 @@ Reviewed: staged changes (3 files, +120/-45 lines)
 2. **[Information Leakage]** DB error codes exposed in API responses — `src/api/response.py:format_error`
    Internal database error codes are exposed directly in the API response.
    Callers now depend on DB-specific error structures.
+
    **Suggestion:** Introduce an app-level error type in the API layer so that switching
    from Postgres to another store won't ripple through all API consumers.
 

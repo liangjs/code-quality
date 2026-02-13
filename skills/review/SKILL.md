@@ -58,20 +58,25 @@ Read the resolved code before reviewing. For diffs, focus the review on the chan
 
 Start with a header stating what was reviewed, then list issues ranked by severity.
 
-Each issue has:
-- **[Tag]** from the relevant principle file's issue tags, followed by a short title summarizing the issue
-  - Prefer the predefined tags from principle files when the issue fits
-  - Use a descriptive custom tag (e.g., [Hardcoded Dependency], [Inconsistent Abstraction]) for issues that don't fit the standard categories
-  - Custom tags should follow the same format: bracketed, clear, and specific
-- **Location** as `file:path:SymbolOrLine`
-- **1-2 sentence description** of the problem and its impact on complexity
-- **Suggestion** that is specific to the project context, not a generic principle restatement
+**Format each issue as:**
+```
+N. **[Tag]** Short title — `file:path:SymbolOrLine`
+   Description of the problem and its impact (1-2 sentences).
 
-Do NOT include summary statistics, overall scores, or section dividers between issues. Just the header and the ranked issue list.
+   **Suggestion:** Specific suggestion for this codebase.
 
-If there are nearly no issues, give brief positive feedback noting what the code does well.
+```
 
-See `examples/output.md` for the expected format.
+**Key rules:**
+- Use markdown numbered lists (`1.`, `2.`, etc.)
+- Indent continuation lines with 3 spaces
+- Add blank line between description and suggestion
+- Use predefined tags from principle files or create custom tags (e.g., [Hardcoded Dependency])
+- Do NOT add summary statistics or section dividers
+
+If there are nearly no issues, give brief positive feedback.
+
+See `examples/output.md` for reference.
 
 ## Review Dimensions
 
