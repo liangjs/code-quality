@@ -58,19 +58,18 @@ Read the resolved code before reviewing. For diffs, focus the review on the chan
 
 Start with a header stating what was reviewed, then list issues ranked by severity.
 
-**Format each issue as:**
+**Format each issue as a bold-prefixed paragraph (NOT a markdown list item):**
 ```
-N. **[Tag]** Short title — `file:path:SymbolOrLine`
-   Description of the problem and its impact (1-2 sentences).
-
-   **Suggestion:** Specific suggestion for this codebase.
-
+**N. [Tag]** Short title — `file:path:SymbolOrLine`
+Description of the problem and its impact (1-2 sentences).
+**Suggestion:** Specific suggestion for this codebase.
 ```
+
+Separate each issue with a blank line.
 
 **Key rules:**
-- Use markdown numbered lists (`1.`, `2.`, etc.)
-- Indent continuation lines with 3 spaces
-- Add blank line between description and suggestion
+- Use `**N. [Tag]**` bold prefix — do NOT use markdown numbered list syntax (`1.` at line start)
+- No indentation — all lines start at column 0
 - Use predefined tags from principle files or create custom tags (e.g., [Hardcoded Dependency])
 - Do NOT add summary statistics or section dividers
 

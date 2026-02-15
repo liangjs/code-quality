@@ -1,7 +1,7 @@
 {
   "name": "code-quality",
   "description": "Reviews code for long-term maintainability concerns, focusing on structural and design quality.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [
     "code-quality",
     "code-review",
