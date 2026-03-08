@@ -79,7 +79,7 @@ See `examples/output.md` for reference.
 
 ## Review Dimensions
 
-Load these principle files for the full set of red flags and issue tags:
+Load *ALL* these principle files for the full set of red flags and issue tags:
 
 - `principles/module-depth.md` — Deep vs shallow modules, interface simplicity, over-decomposition
 - `principles/information-hiding.md` — Encapsulation, information leakage, temporal decomposition
